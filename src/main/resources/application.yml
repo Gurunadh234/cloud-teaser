@@ -1,0 +1,13 @@
+spring:
+  application.name: cloud-teaser
+  
+  datasource:
+    url: jdbc:postgresql://localhost:5432/cloud_teaser?currentSchema=cloud&stringtype=unspecified
+    username: ${POSTGRES_MASTER_USERNAME}
+    password: ${POSTGRES_MASTER_PASSWORD}
+    driver-class-name: org.postgresql.Driver
+  
+spring.jpa.open_in_view: true
+
+default:
+  questionCount: 65
